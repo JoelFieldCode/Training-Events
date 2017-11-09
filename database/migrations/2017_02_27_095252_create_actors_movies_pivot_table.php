@@ -1,8 +1,6 @@
 <?php
-
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateActorsMoviesPivotTable extends Migration
 {
     /**
@@ -20,7 +18,6 @@ class CreateActorsMoviesPivotTable extends Migration
             $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
         });
     }
-
     /**
      * Reverse the migrations.
      *

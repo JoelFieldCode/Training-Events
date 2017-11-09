@@ -12,98 +12,15 @@
 */
 $key = "secret";
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Get all the actors
-// Route::get('events/{location?}', [
-//     'middleware' => 'api',
-//     'uses' => 'EventController@index'
-// ]);
-
+// get events with a optional location paramater
 Route::get('events/{location?}', ['middleware' => 'api', function (Illuminate\Http\Request $request, $location = "null") {
+    // call event index controller, passing the location and the jwt
     $eventController = new \App\Http\Controllers\EventController;
-    return $eventController->index($location, $request->jwt);
+    if($location === "null"){
+        $location = $request->jwt["location"];
+    }
+    
+    return $eventController->index($location);
 }]);
 
-/* Actor routes */
-
-// Get all the actors
-Route::get('actor', [
-    'middleware' => 'api',
-    'uses' => 'ActorController@index'
-]);
-
-// Get detailed information about a specific actor
-Route::get('actor/{actorName}', [
-    'middleware' => 'api',
-    'uses' => 'ActorController@find'
-]);
-
-// Create a new actor
-Route::post('create/actor', [
-    'middleware' => 'api',
-    'uses' => 'ActorController@store'
-]);
-
-// Add an actor to a movie
-Route::post('create/actor/addToMovie', [
-    'middleware' => 'api',
-    'uses' => 'ActorController@addToMovie'
-]);
-
-// Update an actor's profile image, this feature isn't currently working.
-Route::post('update/actor/image', [
-    'middleware' => 'api',
-    'uses' => 'ActorController@updateProfileImage'
-]);
-
-
-
-
-/* Movie routes */
-
-// Get all movies
-Route::get('movie', [
-    'middleware' => 'api',
-    'uses' => 'MovieController@index'
-]);
-
-// Get detailed information about a specific movie
-Route::get('movie/{movieName}', [
-    'middleware' => 'api',
-    'uses' => 'MovieController@find'
-]);
-
-// Create a new movie
-Route::post('create/movie', [
-    'middleware' => 'api',
-    'uses' => 'MovieController@store'
-]);
-
-
-
-
-
-
-/* Genre Routes */
-
-// Create a new genre
-Route::post('create/genre', [
-    'middleware' => 'api',
-    'uses' => 'GenreController@store'
-]);
-
-// Get the detailed information of a specific genre
-Route::get('genre/{genreName}', [
-    'middleware' => 'api',
-    'uses' => 'GenreController@find'
-]);
-
-// Retrieve all genres
-Route::get('genre', [
-    'middleware' => 'api',
-    'uses' => 'GenreController@index'
-]);
 
