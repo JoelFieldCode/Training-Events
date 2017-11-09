@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Get all the actors
+Route::get('events/{location?}', [
+    'middleware' => 'api',
+    'uses' => 'EventController@index'
+]);
+
 /* Actor routes */
 
 // Get all the actors
