@@ -1,0 +1,15 @@
+[19-Mar-2017 18:31:34 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php on line 9
+[19-Mar-2017 18:31:34 UTC] PHP Stack trace:
+[19-Mar-2017 18:31:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php:0
+[30-Mar-2017 01:33:53 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php on line 9
+[30-Mar-2017 01:33:53 UTC] PHP Stack trace:
+[30-Mar-2017 01:33:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php:0
+[01-Apr-2017 11:57:53 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php on line 9
+[01-Apr-2017 11:57:53 UTC] PHP Stack trace:
+[01-Apr-2017 11:57:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php:0
+[04-Apr-2017 10:46:57 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php on line 9
+[04-Apr-2017 10:46:57 UTC] PHP Stack trace:
+[04-Apr-2017 10:46:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php:0
+[08-Apr-2017 05:12:17 UTC] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php on line 9
+[08-Apr-2017 05:12:17 UTC] PHP Stack trace:
+[08-Apr-2017 05:12:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Console/Commands/Inspire.php:0

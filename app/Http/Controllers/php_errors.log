@@ -1,0 +1,42 @@
+[19-Mar-2017 22:10:00 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[19-Mar-2017 22:10:00 UTC] PHP Stack trace:
+[19-Mar-2017 22:10:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[19-Mar-2017 22:16:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[19-Mar-2017 22:16:17 UTC] PHP Stack trace:
+[19-Mar-2017 22:16:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[30-Mar-2017 00:29:54 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[30-Mar-2017 00:29:54 UTC] PHP Stack trace:
+[30-Mar-2017 00:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[30-Mar-2017 12:57:11 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[30-Mar-2017 12:57:11 UTC] PHP Stack trace:
+[30-Mar-2017 12:57:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[01-Apr-2017 21:11:05 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[01-Apr-2017 21:11:05 UTC] PHP Stack trace:
+[01-Apr-2017 21:11:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[02-Apr-2017 00:18:42 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[02-Apr-2017 00:18:42 UTC] PHP Stack trace:
+[02-Apr-2017 00:18:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[03-Apr-2017 08:21:06 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[03-Apr-2017 08:21:06 UTC] PHP Stack trace:
+[03-Apr-2017 08:21:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[03-Apr-2017 08:31:28 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[03-Apr-2017 08:31:28 UTC] PHP Stack trace:
+[03-Apr-2017 08:31:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[04-Apr-2017 07:32:51 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[04-Apr-2017 07:32:51 UTC] PHP Stack trace:
+[04-Apr-2017 07:32:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[04-Apr-2017 10:02:05 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[04-Apr-2017 10:02:05 UTC] PHP Stack trace:
+[04-Apr-2017 10:02:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[08-Apr-2017 05:15:38 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[08-Apr-2017 05:15:38 UTC] PHP Stack trace:
+[08-Apr-2017 05:15:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[08-Apr-2017 08:54:51 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[08-Apr-2017 08:54:51 UTC] PHP Stack trace:
+[08-Apr-2017 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
+[11-Apr-2017 07:46:53 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php on line 9
+[11-Apr-2017 07:46:53 UTC] PHP Stack trace:
+[11-Apr-2017 07:46:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/PasswordController.php:0
+[13-Apr-2017 07:11:15 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php on line 12
+[13-Apr-2017 07:11:15 UTC] PHP Stack trace:
+[13-Apr-2017 07:11:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/movieAPI/app/Http/Controllers/Auth/AuthController.php:0
