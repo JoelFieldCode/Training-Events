@@ -15,24 +15,16 @@ use Illuminate\Http\UploadedFile;
 use \Firebase\JWT\JWT;
 use Carbon\Carbon;
 
+
 class EventController extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
     
     // Get all actors
-    public function index($location = "null"){
+    public function index($location,$jwt){
         
-        $headers = apache_request_headers();
-        
-        if(!isset($headers['jwt'])){
-            abort(403);
-        }
-        
-        $jwt = $headers['jwt'];
-
-        $key = "secret";
-        
-        $events = Event::whereRaw("location = ? ORDER BY date ASC", array($location))->get();
+        $now = Carbon::now()->timestamp;
+        $events = Event::whereRaw("location = ? AND date > ? ORDER BY date ASC", array($location,$now))->get();
         
         $eventArray = array();
         
@@ -41,20 +33,10 @@ class EventController extends BaseController
             array_push($eventArray, $event);
         }
         
-        $eventArray = array_filter($eventArray, function($event){
-           return Carbon::now()->timestamp < $event["date"];
-        });
-        
         $firstFive = array_slice($eventArray, 0, 5);
         
         return Response::json($firstFive);
         
-    }
-    
-    // Find actor
-    public function find($id){
-        
-
     }
 
 }

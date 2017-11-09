@@ -10,16 +10,22 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+$key = "secret";
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 // Get all the actors
-Route::get('events/{location?}', [
-    'middleware' => 'api',
-    'uses' => 'EventController@index'
-]);
+// Route::get('events/{location?}', [
+//     'middleware' => 'api',
+//     'uses' => 'EventController@index'
+// ]);
+
+Route::get('events/{location?}', ['middleware' => 'api', function (Illuminate\Http\Request $request, $location = "null") {
+    $eventController = new \App\Http\Controllers\EventController;
+    return $eventController->index($location, $request->jwt);
+}]);
 
 /* Actor routes */
 
