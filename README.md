@@ -2,7 +2,8 @@
 
 Postman API documentation is here: https://documenter.getpostman.com/view/3121015/training-events/77mY1V2
 
-Steps to use the API:
+Steps to use the API (you don't need to clone this repo as I have the API hosted on a cloud dev
+environment):
 
 Download and install Postman (free version), sign in with your google account. Now you can click 
 the "Run in Postman" button at the top right on the API documentation page I linked before. This 
