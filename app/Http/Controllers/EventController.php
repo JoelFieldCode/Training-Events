@@ -26,21 +26,15 @@ class EventController extends BaseController
         // get current timestamp
         $now = Carbon::now()->timestamp;
         
-        // get events with a given location that are in the future, ordered by now to latest
-        $events = Event::whereRaw("location LIKE ? AND date > ? ORDER BY date ASC", array($location,$now))->get();
-        
-        $eventArray = array();
+        // get 5 events with a given location that are in the future, ordered by now to latest
+        $events = Event::whereRaw("location LIKE ? AND date > ? ORDER BY date ASC LIMIT 5", array($location,$now))->get();
         
         // get iso timestamp for response
         foreach($events as $event){
             $event->dateTime = $event->getIso();
-            array_push($eventArray, $event);
         }
         
-        // get first five
-        $firstFive = array_slice($eventArray, 0, 5);
-        
-        return Response::json($firstFive);
+        return Response::json($events);
         
     }
 

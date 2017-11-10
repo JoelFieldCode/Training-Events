@@ -24,7 +24,9 @@ class DatabaseSeeder extends Seeder
         $cities = array(
             "Brisbane",
             "Sydney",
-            "Perth"
+            "Perth",
+            "Melbourne",
+            "Canberra"
         );
         
         $trainingTypes = array(
@@ -44,7 +46,7 @@ class DatabaseSeeder extends Seeder
                 'date' => $randomDate,
                 'image_url' => "https://everydayinterviewtips.com/wp-content/uploads/2015/05/82257074-cacaroot-marketing-boards.jpg",
                 'available_seats' => rand(0,50),
-                'location' => $cities[rand(0,2)]
+                'location' => $cities[rand(0,4)]
             ]);
         }
         

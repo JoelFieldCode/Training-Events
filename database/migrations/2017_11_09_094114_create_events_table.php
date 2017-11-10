@@ -16,7 +16,7 @@ class CreateEventsTable extends Migration
             $table->increments('id');
             $table->string('title')->default(" ");
             $table->timestamp('date')->default(" ");
-            $table->integer('available_seats')->default(0);
+            $table->integer('available_seats');
             $table->string('image_url')->default(" ");
             $table->string('location')->default(" ");
             $table->timestamps();
