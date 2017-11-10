@@ -13,11 +13,11 @@ to run all 5 API requests and their tests in succession.
 
 My main logic (ignoring laravel generated code) is in:
 
-App/Http/Middleware/API.php
-App/Http/Controllers/EventController.php
-App/Http/routes.php
-App/Database/seeds/DatabaseSeeder.php
-App/Database/migrations/create_events_table.php
-App/Event.php
+- App/Http/Middleware/API.php
+- App/Http/Controllers/EventController.php
+- App/Http/routes.php
+- App/Database/seeds/DatabaseSeeder.php
+- App/Database/migrations/create_events_table.php
+- App/Event.php
 
 I used https://github.com/namshi/jose for the JWT decoding.
