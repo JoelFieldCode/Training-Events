@@ -1,14 +1,15 @@
 # Training-Events
 
-Postman API documentation is here: "api doc link here".
-I used Postman instead of Swagger.
+Postman API documentation is here: https://documenter.getpostman.com/view/3121015/training-events/77mY1V2
 
 Steps to use the API:
 
-Download and install Postman (free version), click import collection and paste this link in: "link here"
-After that you should see the "Training Events" collection on the left. You can individually run
-each request in the collection, see the tests written for it and check out the response. You can also click "Runner"
-at the top of the App to run all 5 API requests and their tests in succession.
+Download and install Postman (free version), sign in with your google account. Now you can click 
+the "Run in Postman" button at the top right on the API documentation page I linked before. This 
+should open up your Postman App and import the collection. Now you should see the"Training Events"
+collection on the left. You can individually run each request in the collection, see the tests 
+written for it and check out the response. You can also click "Runner" at the top left of the App 
+to run all 5 API requests and their tests in succession.
 
 My main logic (ignoring laravel generated code) is in:
 
