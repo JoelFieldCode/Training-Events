@@ -9,7 +9,7 @@ environment. The cloud dev environment "should" be alive when you use it though 
 gets rebooted for maintenance. Though if this happens it's a 2 second fix for me to login and 
 restart the virtual machine.. so just let me know.
 
-#Steps to use the API:
+# Steps to use the API:
 
 - Download and install Postman (free version), sign in with your google account. 
 
@@ -22,7 +22,7 @@ check out their responses.
 - You can also click "Runner" at the top left of the App to run all the API requests and their 
 tests in succession.
 
-#Info about the solution
+# Info about the solution
 
 Available cities to query for: 
 
