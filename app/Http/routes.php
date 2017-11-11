@@ -10,17 +10,24 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-$key = "secret";
 
 // get events with a optional location paramater
 Route::get('events/{location?}', ['middleware' => 'api', function (Illuminate\Http\Request $request, $location = "null") {
-    // call event index controller, passing the location and the jwt
+    
+    // init event controller
     $eventController = new \App\Http\Controllers\EventController;
-    if($location === "null"){
+    
+    /*
+    ** if optional location param not passed then default back to the location stored in
+    ** the jwt (if jwt is invalid or not present the middleware layer would have already caught it).
+    */
+    if($location === "null" && isset($request->jwt["location"])){
         $location = $request->jwt["location"];
     }
     
+    // get events in the given location from the event controller
     return $eventController->index($location);
+    
 }]);
 
 

@@ -21,11 +21,9 @@ class API {
             try{
                 $jws = SimpleJWS::load($request->headers->all()['jwt'][0]);
   
-                // if the JWT is all good then put it directly in the request so its easier to 
-                // access
+                // if the JWT is all good then put it directly in the request so it's easier to  access
                 $request->jwt = $jws->getPayload();
             }
-            
             // fail/abort if we can't
             catch(\Exception $e){
              return response('invalid jwt', 403);

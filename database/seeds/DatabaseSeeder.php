@@ -2,9 +2,6 @@
 
 use Illuminate\Database\Seeder;
 
-use App\Actor;
-use App\Movie;
-use App\Genre;
 use Carbon\Carbon;
 
 class DatabaseSeeder extends Seeder
@@ -16,11 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
         
+        // get timestamps ranging from 3 months ago to 3 months from now
         $startDate = Carbon::now()->subDays(100);
         $endDate   = Carbon::now()->addDays(100);
         
+        //random cities
         $cities = array(
             "Brisbane",
             "Sydney",
@@ -29,6 +27,7 @@ class DatabaseSeeder extends Seeder
             "Canberra"
         );
         
+        //random training types
         $trainingTypes = array(
             "Accounting",
             "Finance",
@@ -36,11 +35,14 @@ class DatabaseSeeder extends Seeder
             "HR"
         );
         
-        for($i = 0; $i < 100; $i++){
+        // create 200 random records
+        for($i = 0; $i < 200; $i++){
+            // create timestamp ranging between the two timestamps created above
             $randomDate = Carbon::createFromTimestamp(rand($endDate->timestamp, $startDate->timestamp))->timestamp;
             
             $randomType = rand(0,3);
             
+            //insert event with random info
             DB::table('events')->insert([
                 'title' => $trainingTypes[$randomType]." Training",
                 'date' => $randomDate,

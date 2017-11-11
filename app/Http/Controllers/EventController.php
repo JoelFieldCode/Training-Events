@@ -20,7 +20,7 @@ class EventController extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
     
-    // Get all actors
+    // get latest 5 events that are in the future, filtering by location
     public function index($location){
         
         // get current timestamp
@@ -29,7 +29,7 @@ class EventController extends BaseController
         // get 5 events with a given location that are in the future, ordered by now to latest
         $events = Event::whereRaw("location LIKE ? AND date > ? ORDER BY date ASC LIMIT 5", array($location,$now))->get();
         
-        // get iso timestamp for response
+        // get iso timestamp for each response
         foreach($events as $event){
             $event->dateTime = $event->getIso();
         }
