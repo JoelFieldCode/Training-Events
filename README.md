@@ -1,6 +1,6 @@
 # Training-Events
 
-#Documentation and important information
+# Documentation and important information
 
 Postman API documentation is here: https://documenter.getpostman.com/view/3121015/training-events/77mY1V2
 
