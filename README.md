@@ -14,7 +14,7 @@ restart the virtual machine.. so just let me know.
 - Download and install Postman (free version), sign in with your google account. 
 
 - Now you can click the "Run in Postman" button at the top right on the API documentation page I 
-linked above. This should open up your Postman App and import the collection (found on the left under "collections").
+linked above (might need to refresh the page). This should open up your Postman App and import the collection (found on the left under "collections").
 
 - You can individually run each request in the collection, see the tests written for each one and 
 check out their responses. 
