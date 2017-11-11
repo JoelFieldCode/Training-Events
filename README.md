@@ -1,16 +1,36 @@
 # Training-Events
 
+#Documentation and important information
+
 Postman API documentation is here: https://documenter.getpostman.com/view/3121015/training-events/77mY1V2
 
-Steps to use the API (you don't need to clone this repo as I have the API hosted on a cloud dev
-environment):
+You don't need to clone this repo and setup the server/db etc as I have it hosted on a cloud dev
+environment. The cloud dev environment "should" be alive when you use it though rarely it 
+gets rebooted for maintenance. Though if this happens it's a 2 second fix for me to login and 
+restart the virtual machine.. so just let me know.
 
-Download and install Postman (free version), sign in with your google account. Now you can click 
-the "Run in Postman" button at the top right on the API documentation page I linked before. This 
-should open up your Postman App and import the collection. Now you should see the"Training Events"
-collection on the left. You can individually run each request in the collection, see the tests 
-written for it and check out the response. You can also click "Runner" at the top left of the App 
-to run all 5 API requests and their tests in succession.
+#Steps to use the API:
+
+- Download and install Postman (free version), sign in with your google account. 
+
+- Now you can click the "Run in Postman" button at the top right on the API documentation page I 
+linked above. This should open up your Postman App and import the collection (found on the left under "collections").
+
+- You can individually run each request in the collection, see the tests written for each one and 
+check out their responses. 
+
+- You can also click "Runner" at the top left of the App to run all the API requests and their 
+tests in succession.
+
+#Info about the solution
+
+Available cities to query for: 
+
+- Brisbane
+- Sydney
+- Perth
+- Melbourne
+- Canberra
 
 My main logic (ignoring laravel generated code) is in:
 
